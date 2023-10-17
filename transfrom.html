@@ -5,20 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-       div{
+     .transfrom{
             height: 200px;
             width: 200px;
             color: white;
             background-color: navy;
             text-align: center;
+            justify-content: center;
+            transition: width 5s linear 0.5s;
+          
+        }
+        h2{
             align-items: center;
             justify-content: center;
         }
+        .transfrom:hover{
+            width: 400px;
+            
+        }
+        nav > ul {
+            list-style: none;
+            display: flex;
+            justify-content:space-between;
+           
+          
+        }
+        nav li{
+            margin-right: 50px;
+            margin-bottom:20px ;
+        }
+        nav li a{
+            text-decoration: none;
+          
+        }
+        .all-link li{
+            list-style:none;
+            margin:0;
+            padding:0;
+            display:none;
+            background-color: beige;
+
+           
+        }
+        nav > ul > li > ul{
+            position:absolute;
+        }
+        nav > ul > li:hover > ul > li{
+            display:block;
+   
+        }
+        
+
+
     </style>
 </head>
 <body>
     <div class="transfrom">
         <h2>shipon</h2>
     </div>
+    <nav>
+        <ul>
+            <li><a href="#">about</a></li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">blog</a></li>
+            <li><a href="#">all link</a>
+            <ul class="all-link">
+                <li><a href="#">link-1</a></li>
+                <li><a href="#">link-2</a></li>
+                <li><a href="#">link-3</a></li>
+                <li><a href="#">link-4</a></li>
+            </ul></li>
+        </ul>
+    </nav>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, dolore.</h1>
 </body>
 </html>
